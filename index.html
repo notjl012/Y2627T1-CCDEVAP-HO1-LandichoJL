@@ -1,14 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>This is a title</title>
-    </head>
-    <body>
-                <h1 align="center">ABOUT ME</h1>
-                <p>Name: John Lawrence P. Landicho</p>
-                <p>Course: BSCS-ST</p>
-    <main>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Page</title>
+</head>
+<body>
 
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills & Education</a></li>
+                <li><a href="#media">Media Showcase</a></li>
+                <li><a href="contact.html">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="public/portrait.jpg" alt="Profile Picture" width="200">
+            <article>
+            
+                <audio controls>
+                    <source src="public/sample-audio.mp3" type="audio/mpeg">
+                </audio>
+            </article>
+            <p>Hello! I am John Lawrence Landicho, I am currently taking up Computer Science in De La Salle University. Welcome to my plain HTML website.</p>
+            <p>You can check out my official code repositories on <a href="https://github.com" target="_blank">GitHub</a>.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Education & Experience</h2>
+            <table border="1">
+                <caption>Academic Summary</caption>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>High School</td>
+                        <td>De La Salle Lipa</td>
+                        <td>2015 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Senior High School</td>
+                        <td>De La Salle Lipa</td>
+                        <td>2019-2021</td>
+                    </tr>
+                    <tr>
+                        <td>College</td>
+                        <td>De La Salle University - Dasmarinas</td>
+                        <td>2021-2o23</td>
+                    </tr>
+                    <tr>
+                        <td>College</td>
+                        <td>De La Salle University</td>
+                        <td>2023 - Present</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="media">
+            <article>
+                <h3>Video Presentation</h3>
+                <video width="320" height="240" controls>
+                    <source src="public/sample-video.mp4" type="video/mp4">
+                </video>
+            </article>
+        </section>
     </main>
-    </body>
+
+    <footer>
+        <p><a href="#about">Back to top</a></p>
+    </footer>
+
+</body>
 </html>
