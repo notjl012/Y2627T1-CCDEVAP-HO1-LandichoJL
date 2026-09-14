@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Me</title>
+</head>
+<body>
+
+	<header>
+		<h1>Contact Me</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Back to My Personal Page</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Get in Touch</h2>
+			<p>Use the form below to send me a message.</p>
+
+			<form action="mailto:john_lawrence_landicho@dlsu.edu.ph" method="post" enctype="multipart/form-data" >
+				<fieldset>
+					<legend>Contact Information</legend>
+
+					<p>
+						<label for="full-name">Full Name:</label><br>
+						<input type="text" id="full-name" name="full_name" required>
+					</p>
+
+					<p>
+						<label for="email">Email Address:</label><br>
+						<input type="email" id="email" name="email" required>
+					</p>
+
+					<p>
+						<label for="phone">Phone Number:</label><br>
+						<input type="tel" id="phone" name="phone">
+					</p>
+
+					<p>
+						<label for="contact-date">Preferred Contact Date:</label><br>
+						<input type="date" id="contact-date" name="contact_date">
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<legend>Message Details</legend>
+
+					<p>
+						<label for="topic">Topic:</label><br>
+						<select id="topic" name="topic">
+							<option value="general">General Inquiry</option>
+							<option value="school">School Project</option>
+							<option value="collaboration">Collaboration</option>
+							<option value="other">Other</option>
+						</select>
+					</p>
+
+					<p>Preferred Reply Method:</p>
+					<input type="radio" id="reply-email" name="reply_method" value="email" checked>
+					<label for="reply-email">Email</label>
+					<input type="radio" id="reply-phone" name="reply_method" value="phone">
+					<label for="reply-phone">Phone</label>
+
+					<p>
+						<label for="message">Message:</label><br>
+						<textarea id="message" name="message" rows="6" cols="40" required></textarea>
+					</p>
+
+					<p>
+						<label for="attachment">Attach a File:</label><br>
+						<input type="file" id="attachment" name="attachment">
+					</p>
+
+				</fieldset>
+
+				<p>
+					<input type="submit" value="Send Message">
+					<input type="reset" value="Clear Form">
+				</p>
+			</form>
+		</section>
+
+		<section>
+			<h2>Find Me Online</h2>
+			<ul>
+				<li><a href="https://github.com/notjl012" target="_blank" rel="noopener noreferrer">GitHub: notjl012</a></li>
+				<li><a href="https://www.instagram.com/notjl_/" target="_blank" rel="noopener noreferrer">Instagram: @notjl_</a></li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<p><a href="index.html">Return to the home page</a></p>
+	</footer>
+
+</body>
+</html>
